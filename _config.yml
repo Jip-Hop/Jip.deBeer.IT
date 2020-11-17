@@ -1,0 +1,140 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Jip de Beer
+subtitle                 : # site tagline that appears below site title in masthead
+name                     : "Jip de Beer"
+description: >- # this means to ignore newlines until "baseurl:"
+  Jip de Beer is an artist who operates on the intersection of
+  art and computer science. He's fascinated by automation and
+  attempts to optimize his artistic work(flow) with programming.
+# url                      : "http://localhost:4000" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+# baseurl                  : "" # the subpath of your site, e.g. "/blog"
+# repository               : "mmistakes/minimal-mistakes" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : /assets/images/logo-16-9.svg # path of fallback teaser image
+comments:
+  provider               : false # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+github_username: Jip-Hop
+minimal_mistakes_skin: jip
+search: true # Lunr is enabled (hard coded) due to my modifications
+# SEO Related
+google_site_verification :
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+
+full_image_path: https://srv.debeer.it/s/
+full_cdn_image_path: "https://ik.imagekit.io/jipdebeer/"
+
+author:
+  name: "Jip de Beer"
+  home: "/contact/"
+  avatar : "/assets/images/bio-photo/jip"
+  bio    : "On the intersection of art and computer science."
+
+footer:
+
+# Load main.min.js in the head via defer (not at end of body)
+head_scripts:
+  - /assets/js/main.min.js
+
+include:
+  - _pages
+
+# Exclude from processing.
+exclude:
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - server_files
+
+# Build settings
+markdown: kramdown
+remote_theme: Jip-Hop/minimal-mistakes
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Outputting
+permalink: /:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: Europe/Amsterdam
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: []
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      show_date: true
+      comments: false
+      share: false
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true

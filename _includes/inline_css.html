@@ -1,0 +1,15 @@
+{% capture styles %} {% include main.scss %} {% endcapture %}
+<style>
+  {{ styles | scssify }}
+</style>
+<noscript>
+  <style>
+    #main .archive .pagination {
+      display: flex;
+    }
+
+    #site-nav .search__toggle {
+      display: none;
+    }
+  </style>
+</noscript>

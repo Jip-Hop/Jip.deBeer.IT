@@ -1,0 +1,13 @@
+<figure class="{{ include.class }}">
+  {% capture full_image_path %}{{ site.full_image_path | append: include.image_path }}{% endcapture %}
+  {% capture full_cdn_image_path %}{{ site.full_cdn_image_path | append: include.image_path }}{% endcapture %}
+  
+  <a href="{{ full_image_path }}" style="background-image:url({{full_cdn_image_path | append: "?tr=w-1,h-1,f-png"}})">
+    {% include image image_path=include.image_path alt=include.alt class=include.class max_width=include.max_width max_height=include.max_height%}
+  </a>
+  {%- if include.caption -%}
+    <figcaption>
+      {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+    </figcaption>
+  {%- endif -%}
+</figure>

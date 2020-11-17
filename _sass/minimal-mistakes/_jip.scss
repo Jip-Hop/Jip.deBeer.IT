@@ -1,0 +1,573 @@
+$bars-color: #000 !default;
+$page-color: #f5f5f5 !default;
+// $content-background-color: #fff !default;
+$max-page-width: 1280px;
+$max-content-width: 600px;
+
+a {
+  text-decoration: none;
+}
+
+iframe {
+  border: none;
+}
+
+html {
+  background-color: $page-color;
+  scroll-padding-top: $nav-height;
+  overflow-y: scroll;
+}
+
+body {
+  max-width: $max-page-width;
+  margin: 0 auto;
+}
+
+:root {
+  --primary-color: #{$primary-color};
+}
+
+.masthead {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: $max-page-width;
+  background: $bars-color;
+  border: 0;
+
+  .masthead__inner-wrap {
+    padding: 0;
+
+    // The @include clearfix unfortunately adds 1px of margin on the right side on Safari 13.0.5.
+    // This undoes the clearfix.
+    &:after {
+      display: none;
+    }
+  }
+}
+
+#site-nav {
+  background: transparent;
+
+  a {
+    line-height: $nav-height;
+    margin: 0;
+    padding: 0 1em;
+    font-weight: 300;
+
+    &.active {
+      color: $link-color-hover;
+      font-weight: 900;
+    }
+
+    &:hover {
+      color: $masthead-link-color;
+      background: $primary-color;
+    }
+  }
+
+  .visible-links {
+    text-transform: uppercase;
+    font-size: 11px;
+    min-width: fit-content;
+
+    a:before {
+      content: none;
+    }
+  }
+
+  .search__toggle {
+    background: $primary-color;
+    color: white;
+    width: $nav-height;
+    height: $nav-height;
+    margin: 0 0 0 1px;
+    padding: 0;
+    font-size: 0.8em;
+    min-width: 20px;
+  }
+
+  .search__toggle:hover {
+    background: $link-color-hover;
+    color: white;
+  }
+}
+
+.page__hero {
+  margin-bottom: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@include breakpoint($large) {
+  .initial-content:not(.is--hidden) {
+    display: flex;
+  }
+}
+
+#main {
+  padding: 0;
+  margin-top: $nav-height;
+  display: flex;
+  flex: 1;
+
+  flex-direction: column;
+
+  @include breakpoint($large) {
+    flex-direction: row;
+  }
+
+  // Don't make the entire sidebar sticky,
+  // just it's contents.
+  // This way I can have a background color for the entire sidebar.
+  .sidebar {
+    background: $bars-color;
+    padding: 1em;
+    padding-top: 0;
+    color: $bars-text-color;
+    opacity: 1;
+    max-height: initial;
+    position: initial;
+
+    // Unset the overflow property,
+    // otherwise sticky won't work on the child element
+    overflow-y: initial;
+
+    > * {
+      margin: 0;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    .author__avatar {
+      width: 48px;
+      height: 48px;
+    }
+
+    .author__urls-wrapper {
+      display: none;
+    }
+
+    @include breakpoint($large) {
+      // min-height: 100vh;
+      flex: 0 0 $right-sidebar-width-narrow;
+      // max-height: 100vh;
+      // top: 0;
+
+      .author__avatar {
+        width: 100%;
+        height: auto;
+      }
+
+      // Sticky user profile
+      > *:first-child {
+        position: -webkit-sticky;
+        position: sticky;
+        top: $nav-height;
+      }
+    }
+
+    @include breakpoint($x-large) {
+      flex: 0 0 $right-sidebar-width;
+    }
+  }
+
+  footer.page__meta {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page__taxonomy {
+    width: 100%;
+    // max-width: $max-content-width;
+    text-align: center;
+    line-height: 25px;
+
+    .page__taxonomy-item {
+      border: 0;
+      background-color: #767676;
+      border-radius: 0 2px 2px 0;
+      color: #fff;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.2727272727;
+      margin: 2px 4px 2px 10px;
+      padding: 3px 7px;
+      position: relative;
+      text-transform: uppercase;
+      transition: none;
+
+      &:hover {
+        background: $link-color-hover;
+      }
+
+      &::before {
+        transition: none;
+        border-top: 10px solid transparent;
+        border-right: 8px solid #767676;
+        border-bottom: 10px solid transparent;
+        content: "";
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: -8px;
+        width: 0;
+      }
+
+      &:hover::before {
+        border-right-color: $link-color-hover;
+      }
+
+      &::after {
+        background-color: #fff;
+        border-radius: 50%;
+        content: "";
+        height: 4px;
+        position: absolute;
+        top: 8px;
+        left: -2px;
+        width: 4px;
+      }
+    }
+  }
+
+  .page {
+    margin: 0;
+    padding: 1em;
+    flex: 1;
+
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    .page__inner-wrap {
+      header {
+        text-align: center;
+      }
+
+      > section {
+        a,
+        a:visited {
+          color: $link-color;
+        }
+
+        p {
+          hyphens: auto;
+        }
+
+        > *:not(.responsive-video-container):not(figure):not(.gist):not(iframe) {
+          max-width: $max-content-width;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        figure {
+          > .responsive-video-container {
+            width: 100%;
+            margin-bottom: 0;
+          }
+
+          > a {
+            width: 100%;
+            background-size: cover;
+            image-rendering: pixelated;
+
+            > img {
+              margin-bottom: 0;
+              image-rendering: initial;
+            }
+
+            > figcaption {
+              margin-top: 1em;
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      margin-top: 0;
+
+      .pagination--pager {
+        // max-width: 300px;
+        background-color: transparent;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .pagination--pager:hover {
+        color: $link-color-hover;
+        background: #fff;
+      }
+
+      .pagination--pager:last-child {
+        margin-left: 1.6949152542%;
+      }
+    }
+  }
+
+  .archive__item {
+    // background: $content-background-color;
+    padding-bottom: 1.5em;
+    margin-bottom: 1em;
+    transition: background-color 0.5s ease;
+    // text-align: center;
+
+    > *:not(.archive__item-teaser) {
+      max-width: $max-content-width;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+
+    > .archive__item-teaser {
+      padding-bottom: 56.25%;
+      background: #000;
+
+      > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: initial;
+        display: flex;
+        align-items: center;
+
+        > img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    > .archive__item-title {
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-top: 0.5em;
+      text-align: center;
+      transition: background-color 0.5s ease;
+
+      @include breakpoint($small) {
+        background: $page-color;
+        padding: 1em;
+        padding-bottom: 0.25em;
+        margin-top: -2em;
+        width: max-content;
+        max-width: $max-content-width;
+        box-sizing: content-box;
+      }
+    }
+
+    > .archive__item-excerpt {
+      font-size: 1em;
+      margin-bottom: 0.5em;
+      text-align: center;
+      display: block;
+      cursor: pointer;
+    }
+
+    > .archive__item-excerpt:not(:hover) {
+      color: black;
+    }
+
+    > .read-more {
+      display: block;
+    }
+
+    // The post date in the archive list
+    > p.page__meta {
+      transition: background-color 0.5s ease;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.5em;
+      background: $page-color;
+      color: #000;
+      pointer-events: none;
+      margin: 0;
+    }
+
+    &:hover {
+      background-color: #fff;
+      > .archive__item-title,
+      > p.page__meta {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .page__related {
+    .related__item {
+      margin-bottom: 1em;
+
+      @include breakpoint($small) {
+        width: 32.2%;
+        margin-bottom: 0;
+        float: left;
+        margin-left: 1.6949152542%;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      .archive__item {
+        margin-bottom: 0;
+        padding-bottom: 0.5em;
+        font-size: 0.75em;
+
+        .archive__item-title {
+          width: auto;
+          padding-top: 0.5em;
+
+          @include breakpoint($small) {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .archive {
+    margin: 0;
+    padding: 1em;
+    margin-bottom: 1em;
+    flex: 1;
+
+    @include breakpoint($small) {
+      margin-left: 1em;
+      margin-right: 1em;
+      margin-top: 1em;
+      padding: 0;
+    }
+
+    @include breakpoint($large) {
+      margin-right: 0;
+    }
+
+    .feature__wrapper {
+      background: #000;
+      margin-top: -1em;
+      width: calc(100% + 2em);
+      margin-left: -1em;
+      padding-bottom: 0;
+      margin-bottom: 1em;
+      display: flex;
+
+      @include breakpoint($large) {
+        width: calc(100% + 1em);
+      }
+
+      .feature__item {
+        width: 100%;
+        margin: 0;
+        color: white;
+        transition: none;
+
+        .archive__item {
+          padding-bottom: 0;
+          margin-bottom: 0;
+
+          .archive__item-teaser {
+            display: block;
+            height: 0;
+            color: white;
+          }
+        }
+
+        .archive__item-caption {
+          text-align: center;
+          font-size: 0.75em;
+          font-weight: 300;
+          font-family: $sans-serif;
+          text-transform: uppercase;
+          color: inherit;
+          display: block;
+          position: relative;
+          opacity: 1;
+          padding-bottom: 2em;
+          padding-right: 1em;
+        }
+      }
+
+      .feature__item:hover {
+        color: $link-color-hover;
+      }
+    }
+
+    .pagination {
+      justify-content: center;
+      align-items: center;
+      display: none; // Set to flex via noscript tag
+      margin-top: 0;
+    }
+  }
+
+  .page__related {
+    width: 100%;
+  }
+}
+
+.search-content {
+  margin-top: $nav-height;
+
+  .search-content__form {
+    text-align: center;
+
+    .search-input {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+#results {
+  text-align: center;
+
+  .archive__item {
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint($large) { 
+      width: 75%;
+    }
+  }
+}
+
+#footer {
+  margin-top: 0;
+  background: $bars-color;
+  color: $bars-text-color;
+  text-align: right;
+}
+
+::selection {
+  background: $primary-color;
+}
+
+.layout--home {
+  #page-title,
+  .archive__subtitle {
+    display: none;
+  }
+}
+
+.social-icons .fas,
+.social-icons .fab,
+.social-icons .far,
+.social-icons .fal {
+  color: #fff;
+}
+
+pre {
+  white-space: pre-wrap;
+}

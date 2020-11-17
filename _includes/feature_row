@@ -1,0 +1,20 @@
+{% assign feature_row = site.posts | where_exp:"item", "item.featured" %}
+
+<div class="feature__wrapper">
+
+  {% for f in feature_row limit:3 %}
+    <a href="{{ f.url | relative_url }}" class="feature__item{% if include.type %}--{{ include.type }}{% endif %}" title="{{f.title}}">
+      <div class="archive__item">
+        <div class="archive__item-teaser">
+          {% if f.header.image %}
+            {% include image image_path=f.header.image max_width=f.header.max_width max_height=f.header.max_height class="page__hero-image" alt=image_description sizes="(min-width: 1340px) 349px, (min-width: 1040px) 27.14vw, 33.19vw" loading="eager"%}
+          {% else %}
+            <img src="{{ site.teaser | relative_url }}" alt="" width=16 height=9>
+          {% endif %}
+        </div>
+      </div>
+      <span class="archive__item-caption">{{ f.title }}</span>
+    </a>
+  {% endfor %}
+
+</div>
