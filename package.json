@@ -26,8 +26,8 @@
     "terser": "^5.4.0"
   },
   "scripts": {
-    "uglify": "terser assets/js/_main.js -c -m -o assets/js/main.min.js",
-    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
+    "uglify": "terser assets/js/_ie.js -c -m -o assets/js/ie.min.js && terser assets/js/_main.js -c -m -o assets/js/main.min.js",
+    "watch:js": "onchange \"assets/js/**/*.js\" -e \"assets/js/ie.min.js\" -e \"assets/js/main.min.js\" -- npm run build:js",
     "build:js": "npm run uglify"
   }
 }

@@ -11,6 +11,7 @@ var idx;
   }
 
   ready(function () {
+
     var scroller = document.querySelector("#main > .archive .entries-list");
 
     if (scroller) {
@@ -111,7 +112,7 @@ var idx;
     }
 
     // Close search screen with Esc key
-    document.addEventListener("keyup", function (event) {
+    document.addEventListener("keyup", function (e) {
       if (e.key === "Escape") {
         var initialContent = document.querySelector(".initial-content");
         if (initialContent && initialContent.classList.contains("is--hidden")) {

@@ -49,6 +49,7 @@ footer:
 
 # Load main.min.js in the head via defer (not at end of body)
 head_scripts:
+  - /assets/js/ie.min.js
   - /assets/js/main.min.js
 
 include:
