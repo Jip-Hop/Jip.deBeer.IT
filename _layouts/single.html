@@ -53,7 +53,7 @@ layout: default
       <div class="page__related">
         {% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample:3 %}
         {% for post in posts %}
-          {% include archive-single.html type="related" %}
+          {% include related-single.html %}
         {% endfor %}
       </div>
     {% endif %}

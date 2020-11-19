@@ -332,7 +332,7 @@ body {
       padding-bottom: 56.25%;
       background: #000;
 
-      > a {
+      > *:first-child {
         position: absolute;
         top: 0;
         left: 0;
@@ -424,6 +424,7 @@ body {
         margin-bottom: 0;
         padding-bottom: 0.5em;
         font-size: 0.75em;
+        display: block;
 
         .archive__item-title {
           width: auto;

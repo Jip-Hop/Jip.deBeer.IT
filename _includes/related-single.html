@@ -1,0 +1,21 @@
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: 'related' }}__item">
+  <a class="archive__item" href="{{ post.url | relative_url }}" rel="permalink">
+    <div class="archive__item-teaser">
+      <div>
+        {% if post.header.image %}
+          {% include image image_path=post.header.image max_width=post.header.max_width max_height=post.header.max_height sizes="(min-width: 1340px) 330px, (min-width: 1040px) 25.71vw, (min-width: 600px) 31.9vw, calc(100vw - 32px)"%}
+        {% else %}
+          <img src="{{ site.teaser | relative_url }}" alt="" width=16 height=9>
+        {% endif %}
+      </div>
+    </div>
+    <h2 class="archive__item-title no_toc">{{ title }}</h2>
+    {% include page__meta.html type=include.type %}
+  </a>
+</div>
