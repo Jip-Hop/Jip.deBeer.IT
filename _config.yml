@@ -36,7 +36,7 @@ google_site_verification :
 analytics:
   provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
 
-full_image_path: https://srv.debeer.it/s/
+full_image_path: https://debeer.it/s/
 full_cdn_image_path: "https://ik.imagekit.io/jipdebeer/"
 
 author:
