@@ -39,9 +39,9 @@ Files in this repo will override the theme files in Minimal Mistakes. Changes I'
 
 Symlinks from webp to jpg if jpg is smaller.
 Example source image ink:
-https://srv.debeer.it/s/2015/11/11/rap-karaoke-in-a-costume-minerva-open-day_respect.jpg
+https://debeer.it/s/2015/11/11/rap-karaoke-in-a-costume-minerva-open-day_respect.jpg
 Example link to resized version:
-https://srv.debeer.it/s/2015/11/11/rap-karaoke-in-a-costume-minerva-open-day_respect/1920.jpg
+https://debeer.it/s/2015/11/11/rap-karaoke-in-a-costume-minerva-open-day_respect/1920.jpg
 I could resize and optimize the images with php libraries, or use the imagekit.io api to optimize them and store the results locally.
 Would also ensure I don't max out the imagekit.io free tier.
 
