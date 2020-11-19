@@ -41,7 +41,7 @@ I wasn't incredibly happy with how my previous [Google Chrome extension](../brai
   }  
 }
 </style>
-<p style="--aspect-ratio: 1/1;"><iframe src="https://srv.debeer.it/random_vegan_image_demo/" width="400" height="400" scrolling="no" frameborder="0"></iframe></p>
+<p style="--aspect-ratio: 1/1;"><iframe src="https://debeer.it/random_vegan_image_demo/" width="400" height="400" scrolling="no" frameborder="0"></iframe></p>
 
 With the plugin installed a random comic made by [Vegan Sidekick](http://vegansidekick.com) will be added to about 20% of the pages you visit. It's inserted right after the longest paragraph on the page, and only if the page contains a long paragraph of text. So it fits quite naturally within each page :)
 
