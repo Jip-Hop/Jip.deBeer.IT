@@ -5,7 +5,7 @@
 <img src="{{ full_cdn_image_path | append: "?tr=w-1024" }}"
     loading="{{ include.loading | default: "lazy" }}"
     srcset="{%- if 100 < include.max_width -%}{{ full_cdn_image_path}}?tr=w-100 100w,{%- endif -%}
-    {%- if 320 < include.max_width -%}{{ full_cdn_image_path}}?tr=w-320 320w,{%- endif -%}
+    {%- if 328 < include.max_width -%}{{ full_cdn_image_path}}?tr=w-328 328w,{%- endif -%}
     {%- if 640 < include.max_width -%}{{ full_cdn_image_path}}?tr=w-640 640w,{%- endif -%}
     {%- if 960 < include.max_width -%}{{ full_cdn_image_path}}?tr=w-960 960w,{%- endif -%}
     {%- if 1024 < include.max_width -%}{{ full_cdn_image_path}}?tr=w-1024 1024w,{%- endif -%}
