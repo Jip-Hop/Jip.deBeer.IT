@@ -2,39 +2,6 @@
 var idx;
 
 (function () {
-  function fixImage(target) {
-    if (target.complete && target.naturalHeight === 0) {
-      if(!target.hasAttribute("data-fallback")){
-        return;
-      }
-      
-      var fallback = target.dataset.fallback;
-      target.removeAttribute("data-fallback");
-      target.src = fallback;
-      target.removeAttribute("srcset");    
-    }
-  }
-
-  function loaded(fn) {
-    if (document.readyState === "complete") {
-      fn();
-    } else {
-      window.addEventListener("load", fn);
-    }
-  }
-
-  loaded(() => {
-    console.log("LOADED");
-    // Fix remaining images which failed before we could setup the event listener on the body,
-    // or which otherwise didn't fire an error event before
-    document.querySelectorAll("img[data-fallback]").forEach((target) => {
-      console.log(target.complete, target.naturalHeight, target);
-      
-      // Done loading but image doesn't have any size
-      fixImage(target);
-    });
-  });
-
   function ready(fn) {
     if (document.readyState != "loading") {
       fn();
@@ -44,26 +11,6 @@ var idx;
   }
 
   ready(function () {
-    // Setup early, also fires for dynamically inserted images
-    function tryFixImage(e) {
-      console.log("body error", e.target);
-      var target = e.target;
-      if (target.tagName === "IMG" && target.hasAttribute("data-fallback")) {
-        fixImage(target);
-      }
-    }
-
-    document.body.addEventListener(
-      "error",
-      tryFixImage,
-      true // <-- useCapture
-    );
-
-    document.body.addEventListener(
-      "load",
-      tryFixImage,
-      true // <-- useCapture
-    );
 
     var scroller = document.querySelector("#main > .archive .entries-list");
 

@@ -1,6 +1,5 @@
 {% capture full_image_path %}{{ site.full_image_path | append: include.image_path }}{% endcapture %}
-{% comment %} {% capture full_cdn_image_path %}{{ site.full_cdn_image_path | append: include.image_path }}{% endcapture %} {% endcomment %}
-{% capture full_cdn_image_path %}x{% endcapture %}
+{% capture full_cdn_image_path %}{{ site.full_cdn_image_path | append: include.image_path }}{% endcapture %}
 {% capture sizes %}{{ include.sizes | default: "(min-width: 1340px) 1024px, (min-width: 1040px) 80vw, calc(100vw - 32px)" }}{% endcapture %}
 
 <img src="{{ full_cdn_image_path | append: "?tr=w-1024" }}"
@@ -17,5 +16,5 @@
     width="{{include.max_width}}"
     height="{{include.max_height}}"
     alt="{% if include.alt %}{{ include.alt }}{% endif %}"
-    data-fallback="{{full_image_path}}"
+    onerror="this.removeAttribute('onerror');this.src='{{full_image_path}}';this.removeAttribute('srcset');"
     >
