@@ -53,7 +53,7 @@ Music: [Grenade - Fire in the Hole by Andrew Haze](https://soundcloud.com/andrew
 Third party audio:
 [Brandweerwagens passeren met sirene by Robin Koek ](https://soundcloud.com/gvnl-steim-workshop/brandweerwagens-passeren-met)
 
-[Another Sky by Yukihiro Kaneko](https://soundcloud.com/yukihirokaneko/another-sky)
+Another Sky by Yukihiro Kaneko
 
 [high_pitch.wav by VTK Productions (vtkproductions.com)](https://www.freesound.org/people/vtkproductions.com/sounds/39615/)
 
