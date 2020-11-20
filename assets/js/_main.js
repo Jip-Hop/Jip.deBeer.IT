@@ -2,6 +2,32 @@
 var idx;
 
 (function () {
+  function fixImage(target) {
+    var fallback = target.dataset.fallback;
+    target.removeAttribute("data-fallback");
+    target.src = fallback;
+    target.removeAttribute("srcset");
+  }
+
+  function loaded(fn) {
+    if (document.readyState === "complete") {
+      fn();
+    } else {
+      window.addEventListener("load", fn);
+    }
+  }
+
+  loaded(() => {
+    // Fix remaining images which failed before we could setup the event listener on the body,
+    // or which otherwise didn't fire an error event before
+    document.querySelectorAll("img[data-fallback]").forEach((target) => {
+      if (target.complete && target.naturalHeight === 0) {
+        // Done loading but image doesn't have any size
+        fixImage(target);
+      }
+    });
+  });
+
   function ready(fn) {
     if (document.readyState != "loading") {
       fn();
@@ -11,6 +37,18 @@ var idx;
   }
 
   ready(function () {
+    // Setup early, also fires for dynamically inserted images
+    document.body.addEventListener(
+      "error",
+      (e) => {
+        console.log("body error", e.target);
+        var target = e.target;
+        if (target.tagName === "IMG" && target.hasAttribute("data-fallback")) {
+          fixImage(target);
+        }
+      },
+      true // <-- useCapture
+    );
 
     var scroller = document.querySelector("#main > .archive .entries-list");
 
