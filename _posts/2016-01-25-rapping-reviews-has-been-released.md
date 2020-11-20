@@ -105,7 +105,7 @@ Credits
 
 #### Concept
 
-Jip de Beer (with a wink to [Epic Rap Battles of History](http://www.epicrapbattlesofhistory.com/))
+Jip de Beer (with a wink to [Epic Rap Battles of History](https://www.erbofhistory.com/))
 
 #### Development
 
@@ -159,7 +159,7 @@ Photo '[Everyday Life](https://www.flickr.com/photos/29143375@N05/4381240666)' b
 [VADER-Sentiment-Analysis](https://github.com/cjhutto/vaderSentiment) by C.J. Hutto\
 [eSpeak](http://espeak.sourceforge.net/) text to speech\
 [meSpeak.js](http://www.masswerk.at/mespeak/) by Norbert Landsteiner, mass:werk -- media environments\
-Rhyming based on [Rhymeless](http://rhymeless.hamiltonulmer.com/) by Hamilton Ulmer\
+Rhyming based on [Rhymeless](https://github.com/hamilton/Rhymeless) by Hamilton Ulmer\
 [CMU Pronouncing Dictionary](http://www.speech.cs.cmu.edu/cgi-bin/cmudict) by Carnegie Mellon University\
 [php-tmdb](https://github.com/php-tmdb/) by Michael Roterman\
 [video.js](http://videojs.com/) by Brightcove, Inc.\
