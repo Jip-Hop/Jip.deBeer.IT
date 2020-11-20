@@ -3,10 +3,16 @@ var idx;
 
 (function () {
   function fixImage(target) {
-    var fallback = target.dataset.fallback;
-    target.removeAttribute("data-fallback");
-    target.src = fallback;
-    target.removeAttribute("srcset");
+    if (target.complete && target.naturalHeight === 0) {
+      if(!target.hasAttribute("data-fallback")){
+        return;
+      }
+      
+      var fallback = target.dataset.fallback;
+      target.removeAttribute("data-fallback");
+      target.src = fallback;
+      target.removeAttribute("srcset");    
+    }
   }
 
   function loaded(fn) {
@@ -23,10 +29,9 @@ var idx;
     // or which otherwise didn't fire an error event before
     document.querySelectorAll("img[data-fallback]").forEach((target) => {
       console.log(target.complete, target.naturalHeight, target);
-      if (target.complete && target.naturalHeight === 0) {
-        // Done loading but image doesn't have any size
-        fixImage(target);
-      }
+      
+      // Done loading but image doesn't have any size
+      fixImage(target);
     });
   });
 
@@ -40,15 +45,23 @@ var idx;
 
   ready(function () {
     // Setup early, also fires for dynamically inserted images
+    function tryFixImage(e) {
+      console.log("body error", e.target);
+      var target = e.target;
+      if (target.tagName === "IMG" && target.hasAttribute("data-fallback")) {
+        fixImage(target);
+      }
+    }
+
     document.body.addEventListener(
       "error",
-      (e) => {
-        console.log("body error", e.target);
-        var target = e.target;
-        if (target.tagName === "IMG" && target.hasAttribute("data-fallback")) {
-          fixImage(target);
-        }
-      },
+      tryFixImage,
+      true // <-- useCapture
+    );
+
+    document.body.addEventListener(
+      "load",
+      tryFixImage,
       true // <-- useCapture
     );
 
