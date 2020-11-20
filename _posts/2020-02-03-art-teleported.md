@@ -60,7 +60,7 @@ This portal is 'hands on'! The audience engaged with us through spontaneous draw
 
 With my [Web Spaces projects](https://madtech.me/tag/web-spaces/) I've been breaking out of the confined space of the screen. What initially only existed virtually, began to manifest itself in the material world. This still fascinates me. Since meeting Videokaffe, collaborating (in real time) has become another point of interest, so I began developing a tool which would allow me, and others, to playfully connect and make things happen in the physical world triggered by what happens on the screen.
 
-The tool is a computer program which allows you to measure the average colour of a screen area, by resizing and dragging around a rectangle. The rectangle acts as a sensor, and based on the average colour within it, it turns a [smart power socket](https://www2.meethue.com/nl-nl/p/hue-smart-stekker/8718699689285) on or off via Bluetooth.
+The tool is a computer program which allows you to measure the average colour of a screen area, by resizing and dragging around a rectangle. The rectangle acts as a sensor, and based on the average colour within it, it turns a [smart power socket](https://www.philips-hue.com/nl-nl/p/hue-smart-stekker/8718699689285) on or off via Bluetooth.
 
 For this occasion we connected the smart socket to an air compressor with a bouquet of balloons. Then we dragged the digital sensor rectangle on top of the video feed from the table in New York. This made the rectangle appear on our table surface. But the people at the Art Teleported venue could see it too, since everything on our table is projected on their table too (and vice versa).
 
