@@ -11,7 +11,6 @@ var idx;
   }
 
   ready(function () {
-
     var scroller = document.querySelector("#main > .archive .entries-list");
 
     if (scroller) {
@@ -116,9 +115,8 @@ var idx;
       if (e.key === "Escape") {
         var initialContent = document.querySelector(".initial-content");
         if (initialContent && initialContent.classList.contains("is--hidden")) {
-          document
-            .querySelector(".search-content")
-            ?.classList.remove("is--visible");
+          var searchContent = document.querySelector(".search-content");
+          searchContent && searchContent.classList.remove("is--visible");
           initialContent.classList.remove("is--hidden");
         }
       }
@@ -248,13 +246,12 @@ var idx;
 
       function toggleSearchView() {
         window.scrollTo(0, 0);
-        document
-          .querySelector(".search-content")
-          ?.classList.toggle("is--visible");
-        document
-          .querySelector(".initial-content")
-          ?.classList.toggle("is--hidden");
-        document.querySelector(".search-content input")?.focus();
+        var searchContent = document.querySelector(".search-content");
+        searchContent && searchContent.classList.toggle("is--visible");
+        var initialContent = document.querySelector(".initial-content");
+        initialContent && initialContent.classList.toggle("is--hidden");
+        var searchContentInput = document.querySelector(".search-content input");
+        searchContentInput && searchContentInput.focus();
       }
 
       searchToggle.addEventListener("click", loadSearchResults);
