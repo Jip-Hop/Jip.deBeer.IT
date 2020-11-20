@@ -23,6 +23,7 @@ Files in this repo will override the theme files in Minimal Mistakes. Changes I'
 - Infinite scroll
 - Removed the follow menu from the sidebar
 - Embed video's in a figure element, with optional caption
+- Replaced UglyfyJS with Terser drop in, which supports modern JS
 
 ## TODO
 
