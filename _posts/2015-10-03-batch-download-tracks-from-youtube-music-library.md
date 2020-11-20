@@ -13,7 +13,7 @@ tags:
   - YouTube
 ---
 
-The [YouTube Music Library](https://www.youtube.com/audiolibrary/music) is a good resource of free music. But when quickly trying to find a suitable track, I was slightly annoyed that the YouTube Music Library doesn't allow you to scrub through the track. This forces me to listen to the whole intro. I wrote a small script that batch downloads all track on the current page. This way you can easily listen to the tracks in your favorite media player and scrub as much as you like :)
+The [YouTube Music Library](https://www.youtube.com/audiolibrary/) is a good resource of free music. But when quickly trying to find a suitable track, I was slightly annoyed that the YouTube Music Library doesn't allow you to scrub through the track. This forces me to listen to the whole intro. I wrote a small script that batch downloads all track on the current page. This way you can easily listen to the tracks in your favorite media player and scrub as much as you like :)
 
 {% capture _code %}{% highlight javascript linenos %}
 // Anonymous "self-invoking" function
