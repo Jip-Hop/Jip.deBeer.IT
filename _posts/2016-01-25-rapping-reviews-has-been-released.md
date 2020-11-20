@@ -39,7 +39,7 @@ Since the release in January the site has already been visited by at least 3.50
 
 {% include figure image_path="2016/01/25/rapping-reviews-has-been-released_map.png" caption="" alt="" class="" max_width=1528 max_height=980%}
 
-Rapping.Reviews has also made it into the top 3 of the month on [pointlesssites.com](http://pointlesssites.com)! Which is obviously a big honor. 58% of all the visitors from the past weeks come from pointlesssites.com.
+Rapping.Reviews has also made it into the top 3 of the month on pointlesssites.com! Which is obviously a big honor. 58% of all the visitors from the past weeks come from pointlesssites.com.
 
 <div>
 {% include figure image_path="2016/01/25/pointlesssites.png" caption="" alt="" class="" max_width=366 max_height=240%}
