@@ -22,7 +22,7 @@ tags:
   - Web Spaces
 ---
 
-Web Spaces was part of the Mediafestival exhibition at [Galerie De Meerse](https://www.demeerse.nl/beeldende_kunst/Archief/FACTFICTION/) in Hoofddorp. It's the same installation I showed at [TEC ART](../tec-art-rotterdam-art-week/) in Rotterdam. But this time, there were a lot of young visitors!
+Web Spaces was part of the Mediafestival exhibition at [Galerie De Meerse](https://www.demeerse.nl/beeldende-kunst/factfiction/) in Hoofddorp. It's the same installation I showed at [TEC ART](../tec-art-rotterdam-art-week/) in Rotterdam. But this time, there were a lot of young visitors!
 
 Almost 1100 kids from primary and secondary schools in the region have had a tour through the exhibition, led by guides from the Rijksmuseum. They were told about the work, the artists and their intentions. Additionally there were activities for the young visitors, related to the artworks. For example the activity in relation to my golden Web Space was for each kid to make a monument with clay, from their own favourite web page, and to decide how much their 'treasure' was worth and why. And I was told that in general the pupils really appreciated the not always accessible work (like my work, since it can appear very abstract). So that's good news :)
 
