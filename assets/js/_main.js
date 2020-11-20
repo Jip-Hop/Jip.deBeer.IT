@@ -21,6 +21,7 @@ var idx;
     // Fix remaining images which failed before we could setup the event listener on the body,
     // or which otherwise didn't fire an error event before
     document.querySelectorAll("img[data-fallback]").forEach((target) => {
+      console.log(target.complete, target.naturalHeight, target);
       if (target.complete && target.naturalHeight === 0) {
         // Done loading but image doesn't have any size
         fixImage(target);
