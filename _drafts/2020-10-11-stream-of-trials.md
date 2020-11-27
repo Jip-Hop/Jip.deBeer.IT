@@ -59,11 +59,15 @@ Back to the grass. Imagine you're strolling through a field. You're leaving a tr
 
 While waiting for the grass to sprout, I built a custom [Makelangelo](http://www.makelangelo.com) drawing robot and installed an [AxiDraw](https://axidraw.com) V3 drawing machine. To explore other ways to make the Mouse Trials come to life.
 
-{% include figure image_path="2020/11/13/jip.jpg" caption="Trying out my hanging pen plotter (Makelangelo) " alt="" class="" max_width=1024 max_height=576%}
+{% include figure image_path="2020/11/13/jip.jpg" caption="Trying out my hanging pen plotter (Makelangelo)" alt="" class="" max_width=1024 max_height=576%}
 
 {% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_axidraw_IMG_6461.jpg" caption="AxiDraw plotting a second attempt at Mouse Trail: YouTube Booby Trap" alt="" class="" max_width=3840 max_height=2880%}
 {% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_axidraw_IMG_6337.jpg" caption="Plotting Mouse Trail with ballpoint" alt="" class="" max_width=3840 max_height=2880%}
 {% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_axidraw_IMG_6335.jpg" caption="Mouse Trail: YouTube Booby Trap" alt="" class="" max_width=3840 max_height=2880%}
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_mouse_trail_plot_in_progress_makelangelo_IMG_6538.jpg" caption="Plotting Mouse Trail with Makelangelo drawing machine" alt="" class="" max_width=3840 max_height=3309%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_mouse_trail_plot_in_progress_makelangelo_IMG_6539.jpg" caption="Plotting Mouse Trail with Makelangelo drawing machine" alt="" class="" max_width=3840 max_height=2400%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_mouse_trail_plot_in_progress_makelangelo_IMG_6553.jpg" caption="Plotting Mouse Trail with Makelangelo drawing machine" alt="" class="" max_width=3840 max_height=2400%}
 
 I picked the Mouse Trails from my database, to be translated into artworks, according to some criteria. A session needs to be visually distinctive (not too similar), should been clear (so not too much multitasking between programs without a single objective) and lend itself for a funny title which would hint to what was going on during the session (preferably a bit ambiguous, to confuse the fact if it was an action performed in the virtual of physical world).
 
@@ -81,9 +85,21 @@ Due to the COVID-19 pandemic, many activities (which would ordinarily be perform
 
 {% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_groceries_with_girlfriend_mouse_trail_IMG_9488_2.jpg" caption="Mouse Trail on paper: Groceries with Girlfriend (100x70cm)" alt="" class="" max_width=3840 max_height=2400%}
 
-In addition to the 2D representations of my mouse drawings, I was determined to 3D-print these trails too. So I made another program which interprets the cursor session in the following way: the line starts at the bottom. With every mouse movement in the session, the line would not only move along the x and y (2D) axis, but it would also go up a little bit (along the z axis) line would , and while  which would start with a 3D the line start at the bottom the line to an algorithm which would  
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_mouse_trails_3d_line_start_at_bottom_IMG_9517.jpg" caption="3D-printed Mouse Trails, line starts at bottom" alt="" class="" max_width=3840 max_height=2400%}
+
+In addition to the 2D representations of my mouse drawings, I was determined to 3D-print these trails too. So I made another program which interprets the cursor session in the following way: the line starts at the bottom. With every mouse movement in the session, the line would not only move along the x and y (2D) axis, but it would also go up a little bit (along the z axis).
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_mouse_trails_3d_IMG_6447.jpg" caption="3D-printed Mouse Trails. From left to right: How to Use Bison Kit; How to Solder; Mic Test, Mic Test; Searching for Comet among Stars;" alt="" class="" max_width=3840 max_height=2400%}
 
 But as I'm not a magician, I can't have the line [levitate in the air](https://en.wikipedia.org/wiki/Indian_rope_trick) like [a magic rope](https://www.alamy.com/stock-photo-a-coil-of-rope-with-one-end-standing-upright-as-in-the-indian-rope-41922180.html). So I fed the line to an algorithm which supports it with a tree-like structure. The result is an organic looking three-dimensional object, based on the trail made by my mouse cursor while performing a specific task.
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_mouse_trails_3d_how_to_solder_IMG_9363.jpg" caption="3D-printed Mouse Trail: How to Solder" alt="" class="" max_width=3840 max_height=2475%}
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_mouse_trails_3d_how_to_solder_IMG_9365.jpg" caption="3D-printed Mouse Trail: How to Solder" alt="" class="" max_width=2560 max_height=3840%}
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_mouse_trails_3d_mic_test_IMG_9367.jpg" caption="3D-printed Mouse Trail: Mic Test, Mic Test" alt="" class="" max_width=3840 max_height=2400%}
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_mouse_trails_3d_how_to_use_bison_kit_IMG_9501.jpg" caption="3D-printed Mouse Trail:How to Use Bison Kit" alt="" class="" max_width=3840 max_height=2869%}
 
 The grass sprouted and for a brief moment the patterns were there too. Although not with the same fidelity present in the Mouse Trials with a 3D-printer or pen plotters. It would probably work better on a much bigger scale. Never the less I enjoyed the results, and telling visitors the story behind it.
 
@@ -93,7 +109,14 @@ The grass sprouted and for a brief moment the patterns were there too. Although 
 
 {% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_grass_in_window_IMG_6393.jpg" caption="A nice sunny place for growing grass" alt="" class="" max_width=3840 max_height=2880%}
 
-The intention was to collaborate and connect our individual art practices. Apart from helping to connect all the remote Screen Breach locations like [Baltan Laboratories](https://www.baltanlaboratories.org) (Eindhoven, NL), [Hyde Park Art Center](https://www.hydeparkart.org) (Chicago, USA) with the software I developed ([Mappertje](../mappertje/) and [Mappertje](../mappertje/) [Pop-out Jitsi Meet](https://github.com/Jip-Hop/jitsi-pop)), I started to explore ways to make the drawing machines interactive. Instead of executing a predefined drawing, it would be open to real-time input. Thereby opening up the possibility for the drawing machine to engage in a dialogue with other installations or people.
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_screen_breach_baltan_test.jpg" caption="Simultaneously setting up the Screen Breach portal between Baltan Laboratories (Eindhoven) and SIGN (Groningen)" alt="" class="" max_width=3840 max_height=2400%}
+
+Mouse Trails was my individual project, but our intention was to work together. I contributed by connecting the remote Screen Breach locations like [Baltan Laboratories](https://www.baltanlaboratories.org) (Eindhoven, NL) and [Hyde Park Art Center](https://www.hydeparkart.org) (Chicago, USA) with the software I developed: [Mappertje](../mappertje/) and [Pop-out Jitsi Meet](../pop-out-video-conferencing-extension/).
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_screen_breach_mappertje_jitsi_pop_out_IMG_6303.jpg" caption="Mappertje and Pop-out Jitsi Meet used to transfer the image inside the blue rectangle to a rectangle on a wall in another location" alt="" class="" max_width=3840 max_height=2880%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_screen_breach_mappertje_jitsi_pop_out_IMG_6958.jpg" caption="Mappertje and Pop-out Jitsi Meet used on the main streaming computer" alt="" class="" max_width=3840 max_height=2400%}
+
+But I also started to explore ways to make the drawing machines interactive. Instead of executing a predefined drawing, it would be open to real-time input. Thereby opening up the possibility for the drawing machine to engage in a dialogue with other installations or people.
 
 These real-time drawing machine experiments lead to an 'chat by drawing' installation in collaboration with Chicago based Videokaffe member [Tom Burtonwood](https://tomburtonwood.com). It consists of two AxiDraw machines (one in Chicago, and one in Groningen), each connected to a computer with mouse, two monitors and a webcam. It works like this:
 
