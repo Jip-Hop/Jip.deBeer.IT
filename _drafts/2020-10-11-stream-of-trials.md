@@ -118,7 +118,15 @@ Mouse Trails was my individual project, but our intention was to work together. 
 
 But I also started to explore ways to make the drawing machines interactive. Instead of executing a predefined drawing, it would be open to real-time input. Thereby opening up the possibility for the drawing machine to engage in a dialogue with other installations or people.
 
-These real-time drawing machine experiments lead to an 'chat by drawing' installation in collaboration with Chicago based Videokaffe member [Tom Burtonwood](https://tomburtonwood.com). It consists of two AxiDraw machines (one in Chicago, and one in Groningen), each connected to a computer with mouse, two monitors and a webcam. It works like this:
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_makelangelo_random_drawing_IMG_6456.jpg" caption="Makelangelo drawing random plus symbols" alt="" class="" max_width=3840 max_height=2880%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_makelangelo_random_drawing_IMG_6452.jpg" caption="Makelangelo drawing random plus symbols" alt="" class="" max_width=3840 max_height=2400%}
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_real_time_drawing_experiment_IMG_6500.jpg" caption="Real-time drawing test subject (drawing on the white screen is executed remotely)" alt="" class="" max_width=3840 max_height=2880%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_real_time_drawing_experiment_IMG_6502.jpg" caption="Drawing instructions being executed in remote location" alt="" class="" max_width=3840 max_height=2400%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_real_time_drawing_experiment_IMG_6900_2.jpg" caption="Real-time drawing test subject (drawing on the white screen is executed remotely)" alt="" class="" max_width=3840 max_height=3188%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_real_time_drawing_experiment_IMG_6534.jpg" caption="Real-time drawing test subject" alt="" class="" max_width=3840 max_height=2738%}
+
+These real-time drawing machine experiments lead to a “chat by drawing” installation in collaboration with Chicago based Videokaffe member [Tom Burtonwood](https://tomburtonwood.com). It consists of two AxiDraw machines (one in Chicago, and one in Groningen), each connected to a computer with mouse, two monitors and a webcam. It works like this:
 
 - The visitor in Groningen draws using the mouse, looking at the first monitor
 - The drawing quickly fades away from the screen, while it's transmitted to Chicago
@@ -130,8 +138,21 @@ These real-time drawing machine experiments lead to an 'chat by drawing' install
 - The visitor in Groningen sees the picture/message/scribble on the paper and replies
 - Etcetera
 
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_chat_drawing_IMG_7045.jpg" caption="Chat by drawing installation" alt="" class="" max_width=3840 max_height=2880%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_chat_drawing_IMG_7046.jpg" caption="Chat by drawing installation" alt="" class="" max_width=3840 max_height=2880%}
+
 The program I made controls the machine via the [axi](https://github.com/fogleman/axi) Python library, and communicates over the internet via a data channel provided by [Jitsi Meet](https://meet.jit.si). The webcam image goes through Jitsi Meet as well.
 
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_chat_drawings_IMG_9424.jpg" caption="Some of the chats from the drawings installation " alt="" class="" max_width=3840 max_height=2400%}
+
 With this installation, which we had running for the public at the opening (October 3rd), it's challenging to properly draw. Firstly due to the slight delay: the machine that's executing your drawing is on another continent and it can't physically move as fast as the visitor can move the mouse. But more importantly: because the line fades away from the screen while your drawing, you have to orient yourself based on the 'portal' provided by the webcam feed. The brain needs to rewire itself a bit to get used to this new hand/eye coordination while remotely controlling a machine this way. It was a fun collaboration, and in my opinion it complements my other Mouse Trails works nicely. The Mouse Trails are subconscious drawings. The 'chat by drawing' makes you very aware of the fact you're drawing with a mouse.
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_chat_drawing_IMG_9412.jpg" caption="On the right: the last chat from the opening" alt="" class="" max_width=3840 max_height=2400%}
+
+Let's finish this post with the screen sculpture: the piece we all worked on together. Lee McDonald kicked it off and made the construction. I (Jip de Beer) provided the screens and tackled the technical aspect of it. Sunjoo Lee & Jean-François Peschot went out on a field trip to gather to concent for it and Mark Andreas & Sebastian Ziegler suspended the whole thing from the ceiling!
+
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_screen_sculpture_collaboration_IMG_6875.jpg" caption="Screen sculpture, lights on" alt="" class="" max_width=3840 max_height=2880%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_screen_sculpture_collaboration_groeps.jpg" caption="Screen sculpture, lights off!" alt="" class="" max_width=3821 max_height=3840%}
+{% include figure image_path="2020/10/11/stream_of_trials_-_jip_de_beer_screen_sculpture_collaboration_fantastisch.jpg" caption="Multi-channel screen sculpture playing videos recorded by Sunjoo Lee and Jean-François Peschot" alt="" class="" max_width=3840 max_height=2880%}
 
 Many thanks to everyone involved, especially Marie-Jeanne Ameln, Ron Ritzerfeld and Klaas Koetje.
