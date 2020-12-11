@@ -29,8 +29,6 @@ Files in this repo will override the theme files in Minimal Mistakes. Changes I'
 
 - Remove unused CSS
 - Update location in URL bar during infinite scroll
-- Fix search results layout (bg color, centring) (teaser image should be a link)
-- Make favicons https://realfavicongenerator.net/ and put in /head/custom.html
 - Get a lightbox without jQuery
 - Show Tags on archive and post pages
 - Pre-fill the search bar when clicking a tag and show search results (instead of Tag archive pages)
