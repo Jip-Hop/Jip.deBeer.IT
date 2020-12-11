@@ -21,7 +21,7 @@ $d = new DirectoryIterator($path);
 foreach ($d as $f) {
     if (
         $f->isFile() &&
-        preg_match('/(\.gif|\.png|\.jpe?g)$/', $f->getFilename())
+        preg_match('/(\.gif|\.png|\.jpe?g)$/', strtolower($f->getFilename()))
     ) {
         list($w, $h) = getimagesize($f->getPathname());
 
