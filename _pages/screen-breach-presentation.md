@@ -1,5 +1,5 @@
 ---
-permalink: /reismatest
+permalink: /reismatest/
 title: 'Screen Breach Presentation'
 header:
   image: 2020/10/11/stream_of_trials_-_jip_de_beer_IMG_9589.jpg
