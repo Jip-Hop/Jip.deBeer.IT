@@ -6,7 +6,7 @@ header:
   max_width: 3840
   max_height: 2400
 ---
-<div id="twitch-embed" class="responsive-video-container" style="height:calc(100vh - 40px);"></div>
+<div id="twitch-embed" class="responsive-video-container" style="height:calc(100vh - 48px);"></div>
 <script src="https://embed.twitch.tv/embed/v1.js"></script>
 <script type="text/javascript">
   new Twitch.Embed("twitch-embed", {
