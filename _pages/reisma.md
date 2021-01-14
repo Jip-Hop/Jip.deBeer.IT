@@ -2,7 +2,7 @@
 permalink: /reisma/
 title: 'Screen Breach Presentation'
 header:
-  image: 2020/10/11/stream_of_trials_-_jip_de_beer_IMG_9589.jpg
+  image: 2020/10/11/stream_of_trials_-_jip_de_beer_screen_breach_baltan_test.jpg
   max_width: 3840
   max_height: 2400
 ---
