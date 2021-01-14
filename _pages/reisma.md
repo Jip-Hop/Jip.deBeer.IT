@@ -21,7 +21,7 @@ The Reisma van den Burg grant final presentation will take place on Saturday the
 
 <a id="fullscreen-button" class="pagination--pager" href="#" style="display:none;background-color:transparent;padding-left:0;padding-right:0;width:100%; margin-bottom:1em;">Open Stream & Chat in Full Screen</a>
 <script>
-if(document.fullscreenEnabled){
+if(document.fullscreenEnabled || document.webkitFullscreenEnabled){
   var button = document.getElementById("fullscreen-button");
   button.style.display = "block";
   button.addEventListener(
