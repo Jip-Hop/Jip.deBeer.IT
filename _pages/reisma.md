@@ -33,7 +33,7 @@ if(document.fullscreenEnabled || document.webkitFullscreenEnabled){
         document.exitFullscreen();
       } else if (document.webkitFullscreenElement){
         document.webkitExitFullscreen();
-      else if (twitch.requestFullscreen){
+      } else if (twitch.requestFullscreen){
         twitch.requestFullscreen();
       } else if (twitch.requestFullscreen){
         twitch.webkitRequestFullscreen();
