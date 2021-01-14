@@ -23,6 +23,7 @@ The Reisma van den Burg grant final presentation will take place on Saturday the
 <script>
 if(document.fullscreenEnabled || document.webkitFullscreenEnabled){
   var button = document.getElementById("fullscreen-button");
+  var twitch = document.getElementById("twitch-embed");
   button.style.display = "block";
   button.addEventListener(
     "click",
@@ -30,8 +31,12 @@ if(document.fullscreenEnabled || document.webkitFullscreenEnabled){
       event.preventDefault();
       if (document.fullscreenElement) {
         document.exitFullscreen();
-      } else {
-        document.getElementById("twitch-embed").requestFullscreen();
+      } else if (document.webkitFullscreenElement){
+        document.webkitExitFullscreen();
+      else if (twitch.requestFullscreen){
+        twitch.requestFullscreen();
+      } else if (twitch.requestFullscreen){
+        twitch.webkitRequestFullscreen();
       }
     },
     false
