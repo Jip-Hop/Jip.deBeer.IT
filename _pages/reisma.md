@@ -17,6 +17,8 @@ Especially for the Screen Breach sessions, Jip developed the open source tools [
 
 With an intensive six-day course Jip shared the knowledge he acquired with MADtech students of the Frank Mohr Institute. The results will be presented in the live stream below on the 23rd of January from 21:00 until 23:00 (timezone Amsterdam).
 
+Thanks to all the students for their awesome work: Xuanning, Nusch Bourne, Eliza Huang, Reon Cordova, Tianyi Zheng, Riane Pater, Sally Samaan, Ivana Đerić, Ana Čajić, Quintus Glerum, Alan Ahued Naime, Jui-Tsz Shiu, Joris Bosma and Nanne van der Heide.
+
 <div id="twitch-embed" class="responsive-video-container" style="height:calc(100vh - 48px);"></div>
 <script src="https://embed.twitch.tv/embed/v1.js"></script>
 <script type="text/javascript">
