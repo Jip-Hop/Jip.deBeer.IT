@@ -19,37 +19,9 @@ With an intensive six-day course Jip shared the knowledge he acquired with MADte
 
 Thanks to all the students for their awesome work: Xuanning, Nusch Bourne, Eliza Huang, Reon Cordova, Tianyi Zheng, Riane Pater, Sally Samaan, Ivana Đerić, Ana Čajić, Quintus Glerum, Alan Ahued Naime, Jui-Tsz Shiu, Joris Bosma and Nanne van der Heide.
 
-<div id="twitch-embed" class="responsive-video-container" style="height:calc(100vh - 48px);"></div>
-<script src="https://embed.twitch.tv/embed/v1.js"></script>
-<script type="text/javascript">
-  new Twitch.Embed("twitch-embed", {
-    width: "100%",
-    height: "100%",
-    channel: "jipdebeer"
-  });
-</script>
-
-<a id="fullscreen-button" class="pagination--pager" href="#" style="display:none;background-color:transparent;padding-left:0;padding-right:0;width:100%; margin-bottom:1em;">Open Stream & Chat in Full Screen</a>
-<script>
-if(document.fullscreenEnabled || document.webkitFullscreenEnabled){
-  var button = document.getElementById("fullscreen-button");
-  var twitch = document.querySelector("#twitch-embed iframe");
-  button.style.display = "block";
-  button.addEventListener(
-    "click",
-    function (event) {
-      event.preventDefault();
-      if (document.fullscreenElement) {
-        document.exitFullscreen();
-      } else if (document.webkitFullscreenElement){
-        document.webkitExitFullscreen();
-      } else if (twitch.requestFullscreen){
-        twitch.requestFullscreen();
-      } else if (twitch.webkitRequestFullscreen){
-        twitch.webkitRequestFullscreen();
-      }
-    },
-    false
-  );
-}
-</script>
+<div class="responsive-video-container">
+  <iframe
+      src="https://player.twitch.tv/?video=885253773&parent=jip.debeer.it&autoplay=false"
+      allowfullscreen="true">
+  </iframe>
+</div>
