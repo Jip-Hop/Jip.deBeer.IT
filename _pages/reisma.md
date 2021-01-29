@@ -19,9 +19,4 @@ With an intensive six-day course Jip shared the knowledge he acquired with MADte
 
 Thanks to all the students for their awesome work: Xuanning, Nusch Bourne, Eliza Huang, Reon Cordova, Tianyi Zheng, Riane Pater, Sally Samaan, Ivana Đerić, Ana Čajić, Quintus Glerum, Alan Ahued Naime, Jui-Tsz Shiu, Joris Bosma and Nanne van der Heide.
 
-<div class="responsive-video-container">
-  <iframe
-      src="https://player.twitch.tv/?video=885253773&parent=jip.debeer.it&autoplay=false"
-      allowfullscreen="true">
-  </iframe>
-</div>
+{% include video id="FJ1pbEwcOyc" provider="youtube" caption="Screen Breach Presentation [archived live stream]"%}
