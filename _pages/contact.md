@@ -6,7 +6,7 @@ header:
   max_height: 576
 ---
 
-Contact me by email: <a id="mail" href="mailto:spam@debeer.it?body=Please%20send%20your%20message%20to%20%22my%20name%22%20%40debeer.it.%20Emails%20sent%20to%20spam%40debeer.it%20won%27t%20be%20read.">my name AT deBeer.IT</a>.
+Contact me by email: <a id="mail" href="mailto:spam@debeer.it?body=Please%20send%20your%20message%20to%20%22my%20first%20name%22%20%40debeer.it.%20Emails%20sent%20to%20spam%40debeer.it%20won%27t%20be%20read.">my first name AT deBeer.IT</a>.
 
 # About Jip
 
@@ -28,6 +28,6 @@ function fixMail(e){
 }
 
 a.addEventListener("click", fixMail);
-timer = setTimeout(fixMail, 1000);
+timer = setTimeout(fixMail, 3000);
 })();</script>
 
